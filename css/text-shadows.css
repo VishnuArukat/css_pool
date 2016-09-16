@@ -1,0 +1,66 @@
+
+body {
+	padding: 1em 6em;
+	font: 1.2em/1.5 sans-serif;
+	background-color: #dfdfdf;
+}	
+	
+p {
+	width: 17.5em;
+	padding: 1em;
+	background: #FFF;
+	border: 1px solid #cbcbcb;
+}
+
+/* Text Styles
+------------------------------------------------------- */
+
+
+h1 {
+	color: #dfdfdf;
+	font-size: 3.1em;
+	/*four attributes 1.horizondal offset 2.vertical offset 3.blur radius (optional) 4.color  
+	ofset numbers can be negative  // can apply multiple values to the text
+	shadows stack together*/
+	text-shadow:0 -1px #767676,0 -2px #262626,1px 1px 8px rgba(62,106,168,.8);
+}	
+
+
+.text-overflow {
+	white-space: nowrap;
+	/*Overflow property to hide the overflowing texts*/
+	overflow: hidden;
+	/*for showing the sign that text is clipped*/
+	text-overflow:ellipsis;	/*has values clip , ellipsis some web browser require vendor property*/
+}
+
+.word-wrap {
+	/*breaking the link to wrap*/
+	word-wrap:break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+/* Relative Length Units 
+--------------------------------------------- */
+
+html{
+	/*font size of the page*/
+	font-size: 10px;
+}
+
+.box{
+	width: 30em;
+	font-size: 2em;   /*compounding effect here div is the parent element of the p so font size in the p will be related to this value */
+}
+
+p{
+	/*ex is the relative size  with 'x'
+		don't resize with the window
+	*/
+	font-size: 3ex;
+}
+
+/*em are relative units changes with the html font size setted before
+	1em= 16px as default
+	*/
+/*for avoiding the compounding effect we can use rem unit, r stands for root element*/
+p{
+	font-size: 1.2rem;
+}
+
+
+

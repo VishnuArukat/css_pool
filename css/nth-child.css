@@ -1,0 +1,43 @@
+ul {
+	color: #222;
+	font: normal 1.3em sans-serif;
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 70%;
+}
+li {
+	border: 1px solid;
+	margin: 12px 0;
+	padding: .6em;
+}
+
+/* Structural Pseudo-classes - :nth-child */
+
+li:nth-child(even){
+	/*nth child is a psudo class it can have values even ,odd , or multiples n or any position in integer*/
+	color: white;
+	background-color: black;
+
+}
+li:nth-child(odd){
+	color: black;
+	background-color: tomato;
+}
+li:nth-child(2n+3){
+	/*this is an expresssion it has the syntax of an+b where a is the cycle of elements and b is the starting element*/
+	/*here every 2nd element from 3 rd elelment*/
+	color: white;
+	background-color: green;
+
+}
+li:nth-child(-n+5){
+	/*for selecting the first 5 elements using the -ve value*/
+	color: red;
+	background-color: purple;
+}
+li:nth-last-child(-n+3){
+	/*for selecting the elements from the last elelment*/
+	color: pink;
+	background-color: gray;
+}

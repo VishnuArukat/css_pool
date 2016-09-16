@@ -1,0 +1,27 @@
+
+/* ------------------------
+	Transparent Gradients
+--------------------------- */
+html{
+	/*for getting a full page gradient bg instead of reapeating below*/
+	height: 100%;
+}
+
+body {
+	background: -webkit-linear-gradient(hsl(218,51%,32%),transparent);
+	/*adding position*/
+	background: -webkit-linear-gradient(hsl(218,51%,32%),transparent 75%);
+	/*adding image layer
+	
+		IMPORTANT 
+
+		the value is same as the rgba value of black   -(rgba(0,0,0,0)) best to use the white to avoid the greyish color in the gradient
+
+	*/
+	background: -webkit-linear-gradient(hsl(195,51%,44%), rgba(255,255,255,0) 75%),url('../images/gradient_bg.jpg');
+	background-size: cover;
+
+
+}
+
+

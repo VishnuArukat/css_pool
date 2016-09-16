@@ -1,0 +1,58 @@
+/*except margin is consider as bg*/
+
+
+.box { 
+	/*for color*/
+	background-color: #FFAB00;
+	/*for img
+	here the images is the same size as the div so not repeating*/
+	background-image: url('../images/bg.png');
+	/*below img will repeat bcoz of small size and download more patterns @ subtlepatterns.com*/
+	background-image: url('../images/bg-tiled.png');
+
+	/*for controlling the tiled property in vertical and horizondal use the following property*/
+	background-image: url('../images/mike.png');
+	/*has values repeat - repaeted both vert and horiz
+		repeat-x - for repeating horizondaly
+		repeat-y for vertical
+		no-repeat for not repeating 
+
+
+		NEW values 
+		space,round still to be supported visit w3c
+	*/
+	background-repeat:no-repeat;
+	/*for controlling the position default it is in the left top most corner of the ele
+	can have keywords(center,left,right,center top,center bottom)
+	or can have percent values(value is related to the width and hight of the element)
+	or x and y values*/ 
+	background-position: -100px 50%; 	/*here 50% means verticaly centered*/
+
+
+}
+
+/*ALL IN ONE
+
+	background:background-color background-image background-repeat background-attachment background-position;
+
+*/
+
+/* Background properties 2*/
+
+.scroll{
+	/*defult value is the scroll and it makes image scroll with the view port when scrolled outside*/
+	/*scrolled inside img is fixed*/
+	background-attachment: scroll;
+}
+.fixed{
+	/*image is fixed and content moves when scrolled outside*/
+	/*scrolled inside img is fixed*/
+	background-attachment: fixed;
+}
+.local{
+	/*when scrolled inside image moves with the content*/
+	/*image moves related to the content*/
+	background-attachment: local;
+}
+
+

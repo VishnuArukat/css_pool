@@ -1,0 +1,50 @@
+
+body {
+	padding: 2em 6em;
+	font-family: monospace;
+	font-size: 2.5em;
+	/*serif has tail ends*/
+	/*sans-serif has plane strocke endings*/
+	/*monospace have same width*/
+}
+	
+/* Font Styles
+--------------------------------------------- */
+
+h1{
+	font-family: Georgia,Times,serif;
+}
+
+p{
+	/*if font family have more than one word then display it in quotes*/
+	font-family: "Times New Roman",Times,serif;
+	/*more example at w3c site*/
+
+	font-weight:normal; 	/*thick or thin have values as normal bold ,bolder,light,lighter*/
+	font-size: normal;
+	/*have values numerical and relative values such as smaller and larger according to the current font size*/
+	font-style: italic; 	/*It can accept values such as italic,normal,oblique(not used often italic is used as substitute) */
+	font-variant: small-caps; 	/*take values small caps,*/
+	font: italic small-caps bold 1.5em "Times New Roman",Times,serif; /*all in one important to specify the font family and font size*/
+
+}
+
+
+/* Text Styles
+--------------------------------------------- */
+p{
+	/*it can take vlues px,em,perce, and unitless value normal
+	normal =1.2 better to use unitless and relative units
+	1.5 = 1.5em = 150%*/
+	line-height: 1.5;
+	/*can take values left,center and right and justify left is the commonly used*/
+	text-align: justify;
+	text-decoration:line-through; 	/*can have values underline, overline linethrew or none(default)*/
+	text-indent: 1.2em;		/*indentation for the first line*/
+	text-transform: lowercase; /*upppercase or lovercase or capitalize(first letter is capital)*/
+	
+	/*normal nowrap(single line) and pre(for markups same as pre tag)
+	pre-line => ignores the multiple spaces but line breaks are kept
+	pre-wrap => honor explicit line breaks(when newline char are written) and spaces	*/
+	white-space:normal;
+}

@@ -1,0 +1,42 @@
+
+/* ------------------------
+	Repeating Gradients
+--------------------------- */
+
+
+
+/*extention of the linear and radial gradients
+syntax is same  50px is the color stop for second and 20px is the color stop for first one 
+they will be spaced out by 30 px 
+if the end and start are not the same color there wil be a sharp transition else it will show as merged color*/
+.box {
+	width: 70%;
+	height: 900px;
+	margin: 35px auto;
+	/*background:-moz-repeating-linear-gradient(rgba(58,122,187,.8) 20px,rgb(43,79,115) 50px); */
+
+
+	/*background:-moz-repeating-linear-gradient(rgba(58,122,187,.8) 20px,rgb(43,79,115) 50px,rgba(58,122,187,.8) 70px);   /*spaced at 50px difference of 70px and 20px*/
+	
+
+	/*for direction add keywords such as left and right etc.*/
+	/*background:-moz-repeating-linear-gradient(left,rgba(58,122,187,.8) 20px,rgb(43,79,115) 50px,rgba(58,122,187,.8) 70px); */
+
+	/*adding angle as direction*/
+	/*background:-moz-repeating-linear-gradient(-45deg,rgba(58,122,187,.9) 2%,rgb(43,79,115) 9%,rgba(58,122,187,.9) 11%);*/
+	
+		
+		/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+					Radial Gradients
+					it also works as the linear gradients
+
+		&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+
+	/*background:-moz-repeating-radial-gradient(rgba(108,144,188,.8),rgb(75,113,160) 20px,rgba(108,144,188,.8) 60px);*/
+
+
+	/*adding origin and shape to the gradient*/
+	/* 0 0 is the origin and the circle is the shape*/
+	background:-moz-repeating-radial-gradient(0 0,circle,rgba(108,144,188,.8),rgba(75,113,160,.85) 100px);	
+}

@@ -1,0 +1,59 @@
+body{
+	font-size: 1.2em;
+	margin: 0;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	font-size: 2em;
+	text-align: center;
+	background-color: lightgrey;
+	font-weight: bold;
+	padding: 10px;
+}
+footer{
+	clear: both;
+	padding:30px 0 0 0;
+	padding-top: 50px;
+	color: red;
+	text-align: center;
+}
+footer div{
+	position: fixed;
+	width: 100%;
+	bottom:0px;
+}
+ol li{
+	padding-bottom: 10px;
+}
+ol li a {
+	color: darkgrey;
+	padding: 5px;
+	text-decoration: none;
+	margin-bottom: 10px; 
+}
+.user{
+	position: relative;
+	right: 20px;
+	font-weight: normal;
+	font-size: .5em;
+	float: right;	
+	margin-top:25px; 
+}
+p {	
+	margin-top: 80px;
+	padding-top: 15px;
+}
+a:hover{
+	color: tomato;
+}
+ol li ol li:first-child{
+	padding-top: 8px;
+}
+#end{
+	font-size: 1.2em;
+	text-align: center;
+	color: lime;
+}

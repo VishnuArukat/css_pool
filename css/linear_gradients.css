@@ -1,0 +1,66 @@
+/* ------------------------
+	Linear Gradients
+--------------------------- */
+/*
+	these are not real css color , these are actual image with different colors and no fixed size.actual size of the gradient is equal to the ele it applies to 
+	commonly used for buttons and bg images.no load time required 
+	some browser needs vendor prefixes(mozilla)
+*/
+.box {
+	width: 500px;
+	height: 500px;
+	margin: 35px auto;
+	border-radius: 15px;
+
+	/* ??????????????????????????????????????????????????????????????????????????????????????
+										IMPORTANT
+
+		-webkit and -moz areused in earlier versions of the browsers
+		position or direction keywords doesnt work when vendor prefix is removed
+	???????????????????????????????????????????????????????????????????????????????????????????? */
+
+
+
+
+	/*gradient line is from top to bottom by default*/
+	/*background:-webkit-linear-gradient(orange,darkblue);*/
+
+
+	/*adding direction in the paranthesis*/
+	/*background: -webkit-linear-gradient(bottom,orange,darkblue);*/
+
+
+	/*For diagonal insert bottom right or top left as a keyword*/
+	/*background: -webkit-linear-gradient(bottom right,orange,darkblue);*/
+
+
+
+	/*for adding degree use deg and it is in anti-clockwise and 0 rep horizon and 90 rep vertical and 45 rep digonal*/
+	/*background: -webkit-linear-gradient(45deg,orange,darkblue);*/
+
+	/*color stops are for stoping the color at a certain pos at a gradient line*/
+	/*it have 2 val position(optional) and color compoment*/
+
+	/*in this green is 50% (can be pixel) from the gradient line(default top to bottom) and browser evenly distribute other values */
+	/*background: linear-gradient(orange,darkblue 100px,green 50%,purple);*/
+}
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+									IMPORTANT
+	Unprefixed syntax when not using the vendor
+	position keywords changes -add 'to' between them
+	and degree values also change that is it will rotate clockwise (0 deg means bottom to top)
+
+
+	Use vendor prefixes (recomended) bcoz mobile browser updates are slower than the desktop
+
+   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.box{
+	/*background: linear-gradient(to left,orange,darkblue,purple);*/
+	background: linear-gradient(to top left,orange,darkblue,purple);
+}
+
+

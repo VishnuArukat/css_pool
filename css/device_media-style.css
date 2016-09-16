@@ -1,0 +1,150 @@
+
+/* Phones to Tablets & Desktop */
+
+@media screen and (min-width: 769px) {
+	.main-header {
+		padding: 35px 0 25px;
+	}
+	.main-header .inner {
+		padding-left: 2.4%;
+	}
+	.logo {
+		float: left;
+	}
+	.main-nav {
+		float: right; 
+	}
+	.main-nav a, 
+	.main-nav a:first-child {
+		display: inline-block;
+		margin: 0 .2em;
+		padding: .35em 1em;
+		border-radius: 8px;
+	}
+	.main {
+		padding-top: 3.6%;
+		width: 65.957446808511%;
+	}
+	.col {
+		float: left;
+	}
+	h1 {
+		font-size: 3em;
+	}
+	.sidebar {
+		margin-left: 3.127659574468%;
+		width: 30.914893617021%; 
+	}
+	.search {
+		width: 100%;
+		position: relative;
+		top: initial;
+		right: initial;
+		margin-bottom: 2em;
+	}
+}
+@media screen and (min-width: 1024px) {	
+	.wrap, 
+	.main-header .inner {
+		width: 1000px;
+	}
+}
+
+/* Device */
+
+/*on smart phones even though its screen width is small the virtual viewport will be greater than that so it zooms out to display the content*/
+/*
+@media screen and (max-device-width:479px){
+checking for the actual device width rather than the viewport width
+	.comments{
+		display: none;
+	}
+}*/
+
+/*orientation is used for landscape or potrait mode
+IMPORTANT  :::: It also affect the desktop so use it with other featurse like width*/
+
+/*@media screen and (orientation:landscape) and (max-device-width:479px){
+	body{
+		background: red;
+	}
+}*/
+
+/*adding high density img for iphome retina display pixel ratio is for the old browsers and min-resolution is for new browsers (both are same)
+we can use the dppx for the pixel rate 
+, act as OR logical operator*/
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-resolution: 144dpi) {
+	.mike {
+		background-image: url('../images/mike2x.png');
+		background-size: 45px 45px;
+	}
+}
+
+
+/*for printing function we can use the print media function 
+and define the styles for that*/
+@media print{
+	* {
+        background: transparent !important;
+        box-shadow: none !important;
+        color: #000 !important; /* Black prints faster and !important states that it is important */
+        text-shadow: none !important;
+    }
+	.main-nav, 
+	.sidebar, 
+	.comments, 
+	.main-footer,
+	img {
+		display: none;
+	}
+	.main-header{
+		margin-bottom: 0;
+		border: none;
+		
+	}
+	.title,.main-header{
+		text-align: center;
+	}
+	a[href^="http:"]:after { 
+		content: " [" attr(href) "]";
+		color: blue;
+	}
+	@page { 
+		margin: .5cm; 
+	}
+	@page :first { 
+		margin-top: 2cm;
+	}
+ 	h2, ul {
+ 		page-break-after: avoid;
+	}
+    p, ul {
+        orphans: 3;
+        widows: 3;
+        font-size: 11pt;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

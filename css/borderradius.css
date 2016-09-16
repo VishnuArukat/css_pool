@@ -1,0 +1,73 @@
+
+.rounded-box {
+   width: 600px;
+   height: 400px;
+   background-color: #568E9D;
+
+
+   /*Using the border radius
+
+	border-radius: 50%;
+	
+	it is the shortform for the below code
+	
+	border-top-left-radius: ;
+   	border-top-right-radius:;
+   	border-bottom-right-radius:;
+   	border-bottom-left-radius: ;
+
+   	can accept the percent and pixel values
+	 it can have 1 (quarter circle) or 2 value(for elliptical if they are different)
+   */
+
+	/*border-top-left-radius: 80px 40px;  	for x (wide) y (tall)  in percet x(width) y(height) 
+   	border-top-right-radius:10px;
+   	border-bottom-right-radius:80px 40px;
+   	border-bottom-left-radius:10px;*/
+ /*when two values are used 1.for top left and bottom right(opposite to each other)   2.top right and bottom left
+
+	when 3 values are used   1.for top left    2.top right and bottom left  3. bottom right
+	when using the 4 go clockwise from top
+ */
+	/*border-radius: 40px 10px;*/
+
+
+/*we can use '/' for specifing each set has x and y values
+
+	using 2 sets same as above 50px for top-left and bottom right 100 for top-right and bottom left viz.
+*/
+
+	/*border-radius: 50px 100px/25px 60px; */
+
+     
+}
+
+
+
+
+
+/*CREATING SHAPES*/
+
+
+.rounded-box{
+	/*for circle width = height*/
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.rounded-box{
+	/*for oval shape width > height*/
+	width: 200px;
+	height: 100px;
+	border-radius: 100px/50px;
+}
+
+
+.rounded-box{
+	/*for lemon shape */
+	width: 200px;
+	height: 200px;
+	background-color: #f5f240;
+	border-radius: 10px 150px 30px 150px;
+}

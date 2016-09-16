@@ -1,0 +1,41 @@
+
+body {
+	padding-top: 50px;
+	background: #F5F5F5;
+	color: #FFF;
+	font-family: sans-serif;
+}
+
+.box {
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 15px;
+	background: steelblue;
+	cursor: pointer;
+	/*transition-duration:1s;  	for applying the transition when revert back*/
+
+	/*if both transition-durations are same then only define in the parent rule*/
+	transition-duration:.3s;
+
+ }
+/*IMPORTANT  below rule is part of the box class*/
+.box:hover {
+	background:lightcoral;
+	border-radius: 50%;
+	
+
+	/*which property to be applied transition
+	check all the animated properties list at w3c/transitions
+	can be applied to multiple properties by seperating with commas
+	the default value of the property is 'all' which animates all*/
+	transition-property:background,border-radius;
+
+
+	/*duration of the transition defualt is 0s
+	multiple duration can be applied in order of property*/
+	/*transition-duration:.3s,1s;*/
+
+	/*transition-duration:.3s;*/
+
+}

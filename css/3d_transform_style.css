@@ -1,0 +1,57 @@
+
+body {
+	/*
+		1.Creating a 3D space
+
+	creating a 3D space it applies to the direct children of the parent element
+	value is the distance between the user and the screen lesser value will create deeper prespective
+	larger value will create shallower prespective */
+	perspective:800px;
+
+
+	/* we can add origin to the prespective ,it must applied to the parent ele default is (50% xvalue,50% y value) it accepts keywords(center top) and length values*/
+	/*perspective-origin:100% 100%;*/
+}
+
+.wrap {
+	transition:transform 1s ease;
+	transform-style:preserve-3d; 	/*for passing down the 3d space to the child elements*/
+}
+
+.wrap div {
+	position: absolute;
+	/*back side visiblity property is visible as default*/
+	backface-visibility:hidden;
+}
+
+.side-a {
+	z-index: 100;
+
+}
+
+.side-b {
+	transform:rotatey(-180deg);
+}
+
+.wrap:hover {
+	/*rotating in 3D new value rotatez
+	all in one can be rotate3d it accepts 4 values 3 for the T(1) or F(0) for each axis and fourth is the angle of rotation */
+	/*transform:rotatez(65deg);*/
+	/*transform:rotate3d(1,0,1,65deg);1 rep active 0 rep no transformation */
+	/*transform:rotate3d(1,0,0,65deg);*/
+
+
+	/*using the translate function*/
+
+	/*transform:translatez(-200px);*/
+	/*transform:translate3d(100px,50px,150px);*/
+
+
+	/*using scalez value is the number which is multiplied by the size of the ele
+	below scale is equal to the 2*100
+	scalez is depended on the translate function*/
+	/*transform:scalez(2) translatez(100px);*/
+
+
+	transform:rotate3d(0,1,0,180deg);
+}

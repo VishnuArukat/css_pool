@@ -1,0 +1,35 @@
+body {
+	color: #222;
+	font: normal 1.2em/1.5 Sans-Serif;
+	margin: 40px auto 0;
+	width: 78%;
+}
+div {
+	background-color: #919090;
+	color: white;
+	float: left;
+	width: 165px;
+	height: 165px;
+	margin: 50px 40px 40px 0;
+	padding: 20px;
+}
+p {
+	clear: both;
+}
+
+/* Structural Pseudo-classes. Keep up the good work! :) */
+/*basicly the arguments are same as the nth-child*/
+div:nth-of-type(-n+2){
+	/*for stylinhg the same type elements it can take arguments as odd even or position of the element as an integer*/
+	/* we can use the expression here an+b */
+	background-color: steelblue;
+}
+div:nth-last-of-type(2)
+	{
+		background-color: black;
+	}
+p:only-of-type{
+	/*if p is only one then apply the css*/
+	/*if more than one is there then no css*/
+	color: blue;
+}

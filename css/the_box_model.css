@@ -1,0 +1,54 @@
+
+body {
+	margin: 0;
+	padding: 8% 25%;
+	color: #FFF;
+	font: 1.2em/1.3 sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+/* Box Styles
+--------------------------------------------- */
+.box{
+	/*to see the bg color content area must not be empty*/
+	background: #000;
+	/*no negative values for padding */
+	/*padding-top: 30px;*/
+	/*padding-right: 35px;*/
+/*	padding-bottom: 30px;
+	padding-left: 35px;*/
+	padding: 30px 35px; /*short hand method and when using the two values first will apply to the top and bottom and second will apply to the right and left*/
+	/*using 3 values 1.top 2.right and left 3.bottom*/
+	/*using the 4 value 1.top 2.right 3.bottom 4.left*/
+}
+
+
+
+/*BORDER STYLES*/
+
+
+.box{
+	/*border-width: medium 15px thin thick; 	nefative is not allowed,accepts keywords and lenght units same as padding it can have different values at different sides*/
+	border-width: 15px;
+	border-style: solid;	/*can have values dotted ,none,dashed,solid .like width we can specify for each sides*/
+	border-color: #84c9e5; /*like width we can specify for each sides ,if color is not specified then it takes the text color*/
+	/*border-top-color: green; like this can applied for each side*/
+
+	/*it can be all specified in border: property*/
+	margin:30px 2em 6% 30px;
+	/*negative value in top will pull the content upward and negative value at the bottom will pull the value downward*/
+/*when auto is used we have to specify the width of the element*/
+}
+
+
+/*MARGIN STYLES*/
+
+/*margin of the element is the border of the parent element*/
+
+.margin-edge{
+	/*can accept negative values and units and keyword auto*/
+	border:3px dashed red;
+}

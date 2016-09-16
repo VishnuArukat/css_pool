@@ -1,0 +1,45 @@
+
+.main {
+	/*dividing the content into multiple columns
+	first specify the count of the column*/
+
+	/*Need vendor preifixes*/
+	/*-moz-column-count:3;*/   /*defined in one line below*/
+	
+	-moz-columns:250px 3;
+
+	/*setting the gap between them*/
+	-moz-column-gap:3em;
+
+	/*for styling the each column we can use following*/
+	/*-moz-column-rule-width:2px;*/
+	/*-moz-column-rule-style:dotted;  /*same as border*/
+	/*-moz-column-rule-color:#070641;*/
+
+
+/*in short below*/
+	-moz-column-rule:2px dotted #070641;  /*same as border*/
+
+	/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+						IMPORTANT
+			columm property can be used in the responsive design 
+			by assigning a max width for the column so that it will always maintain the fixed width screen is reduced and also shrink the column count according to that
+			images also follow the same format
+	$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+	/*-moz-column-width:250px;*/
+	/*in one line above*/
+}
+
+img{
+	/*to prevent it from overflowing*/
+	display: block;
+	margin: 1.5em 0;
+	max-width: 100%
+}
+h1{
+	/*-moz-column-span:all;    it is not working in the mozilla check google*/
+	/*works in chrome with vendor prefix  has values initial, inherit, none*/
+	-webkit-column-span:all;
+}

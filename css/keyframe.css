@@ -1,0 +1,78 @@
+
+body {
+	background: #303030;
+	font: 1.1em sans-serif;
+}
+.wrap {
+	box-sizing: border-box;
+	margin: 70px auto;
+	padding: 5px;
+	width: 600px;
+	border-radius: 10px;
+	background: #222;
+	box-shadow: inset 0 0 1px rgba(0,0,0,.6), 0 1px 0 rgba(255,255,255,.1);
+}
+.prog-bar {
+	height: 60px;
+	border-radius: 5px;
+	background: -webkit-repeating-linear-gradient(-45deg, rgba(255,255,255,.1), rgba(255,255,255,0) 12px), -webkit-linear-gradient(#F5A8A8, #F08080);
+
+	-webkit-animation-name:slide; /*binding the selector check whether it needed a vendor prefix and all the animatable properties*/
+	-webkit-animation-duration:2s;
+
+	/*animation timing function have the same value as the transition timing function default value is ease
+	it is defined for each keyframe not for the entire animation*/
+	-webkit-animation-timing-function:ease-out;
+} 
+
+
+/*	Keyframes
+------------------------------------------ */
+
+/*Animation only execute when we bind them to a selector
+css animation contain 2 points 1.set of keyframes(indicate start and end points and intermediate way points and properies) 2.selector (here slide is the selector) */
+
+
+@-webkit-keyframes slide{
+	/*start session*/
+	/*from{width: 0%;}*/
+	/*end state*/
+	/*to{width: 100%;}*/
+
+
+	/*using the percentages we can control the intermediate states*/
+
+	0%{
+		width: 0%;
+	}
+	/*if more than one property shares the same value then add it as comma seperated value
+	these is for one cycle*/
+
+	30%,60%{width: 50%;}
+	70%{ width: 80%;}
+	100%{
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

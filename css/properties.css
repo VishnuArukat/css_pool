@@ -1,0 +1,43 @@
+
+/*	Page Styles
+------------------------------------- */
+
+body {
+	font: 1.1em/1.3 sans-serif;
+	margin: 0;
+	padding: 0 10%;
+}
+
+
+ /*BY DEAFULT THE BOXES WIDTH AND HEIGHT ARE AS WIDE AND TALL AS ITS CONTENT ITS HOLDS*/
+/*TO SET THE ELEMENT(EX:div) HEIGHT TO BE FIT THE WHOLE PAGE.CHANGE THE WIDTH OF THE PARENT ELEMENTS TO 100%(body and html) */
+
+
+nav {
+	margin: 1.5em 0;
+	/*visibility: hidden; by default it is visible and it hide the ele but takes the space*/
+}
+a{
+	width: 100px;
+	/*display property can take values such as none,inline,block,inline-block. none makes the element dissappear: ;*/
+	/*default inline for anchor elements and cannot have any margin property in the inline display state*/
+	/*use inline-block for that*/
+	/*display: block; 	each link in the newline*/
+	display: inline-block;
+	margin: 15px 0;
+}
+div {
+	padding: 10px 20px;
+	background-color: #EEE;
+	border: 10px solid #DDD;
+	max-width: 400px;	/*content overflows box is not big enough*/
+	max-height:200px;
+	/*max-width- maximum width can take by the element && min-width - minimum width it can shrink when a browser is reduced*/
+	/*width and height are specified according to the parent elements .Total width is the sum of the padding(left and right) and the border and the width values */
+	box-sizing:border-box;   	/*for effective layout and fixed width with changing padding for mozilla it must have vendor prefixes*/
+	-moz-box-sizing:border-box;
+	/*can have visible,hidden ,scrol and auto*/
+	overflow: auto;
+}
+
+

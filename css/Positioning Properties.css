@@ -1,0 +1,92 @@
+
+body {
+	margin: 70px 0 0;
+	background: #E1E1DD;
+	color: #FFF;
+	font: normal 1.4em sans-serif;
+}
+footer{
+	margin-top: 20px;
+	text-align: center;
+}
+footer a{
+	
+	color:orange;
+	text-decoration: none;
+}
+footer a:hover{
+	background-color: tomato;
+	color: lightgreen;
+}
+.wrapper {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 25px;
+	width: 80%;
+	background: #FFF;
+	position: relative;
+	/*if we set the value of the position in the parent element other element will follow this*/
+}
+
+.top {
+	background: #FF6347;
+}
+
+.middle {
+	background: #87CEEB;
+	position: absolute;  /*Sits on top of the other elements when we resize the browser middle remains in position and surrounding elements move */
+	bottom: 0px;   /*offset we set are relative to the browser viewport when we use the absolute value*/
+	right:0px;/*these offset are alligned according to the parent position ,if not set it will change according to the browser view port*/
+}
+.middle:after{
+	/*it will position the element according to the parent element in this case it is the middle class (inside the middle div)*/
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	background:#000;
+	content: "";
+}
+
+.bottom {
+	background: #20B2AA;
+	/*position can accept 4 values static, absolute ,relative and fixed.By default element is static*/
+	/*position: static;*/
+	
+	/*relative=> positioning the element according to the normal position of the element and it doesnot affect the position of the surrounding elements*/
+	/*position: relative;
+	left: 150px; 	these are the offset values
+	bottom: 75px;*/
+
+	/*Absolute =>  completely remove the element from its normal flow and no impact on surroundinge elements*/
+	/*position: absolute;*/
+}
+
+.wrapper div {
+	width: 150px;
+	height: 150px;
+	text-align: center;	
+	line-height: 150px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+}
+
+
+/*FIXED POSITION PROPERTY*/
+/*do not move the element other element move under the fixed element*/
+.fixed{
+	position: fixed;
+	top: 0;	/*close to the upper margin of the browser*/
+	width: 100%; 	/*so they take all the space*/
+	height:60px;
+	background-color: #000;
+}
+
+/*
+	z-index:10 ;
+
+z index property we can avoid elements boxes to overlap each other by stacking the elements
+	adds a 3rd dimension to the page and higher z index value elements sits top of the lower ones and move towards the front of the page
+	only be applied to absolute , fixed and relative not for static
+	cannot apply both position and float at a time
+*/

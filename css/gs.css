@@ -1,0 +1,25 @@
+body {
+	padding-top: 50px;
+	text-align: center;
+}
+
+/* Shapes */
+/*Grouping together the classes for not repeating the codes*/
+/*this was inside the circle and elipse also*/
+/*.square,.circle,.ellipse */
+ .base{ /*.square,.circle,.ellipse replacing with the base class */
+  display: inline-block;
+  margin: 0 15px; /*this was inside the circle and elipse also*/
+  width: 200px; /*this was inside the circle and elipse also*/
+  height: 200px;  /*this was inside the circle also*/
+  background-color: lightcoral;/*this was inside the circle and elipse also*/
+}
+/*Creating a circle*/
+.radius {
+  /*same as above replacing*/
+  border-radius: 50%;/*this was inside  elipse also*/
+}
+
+.ellipse {
+  height: 120px;
+}

@@ -1,0 +1,62 @@
+a{
+	text-decoration: none;
+	color: green;
+	font-size:  2em;
+	position: absolute;
+	right: 20px;
+}
+a:hover{
+	background-color: tomato;
+}
+div {
+	margin: 50px auto;
+	font: 1.1em/1.5 sans-serif;
+	box-sizing: border-box;
+}
+
+.sketch-img {
+	width: 700px;
+	height: 500px;
+	border-radius: 10px;
+	background: url('../images/smiley.png') no-repeat 350px 200px ,url('../images/pencil.png') no-repeat 50px 50px , url('../images/texture.jpg') #d6bb80;
+
+	/*background size can accept values such as percet as keywords cover and contain
+		fisrt value for the first image second value is for the second image
+		2 values are width and height
+		only one value then second will set to auto
+
+		NB  :  this can be added in the background:; property as seperaed by  the / between the position and size
+	*/
+	background-size: 250px 200px,50% 40%,110%;
+
+}
+/*full page background image*/
+html{
+	/*using cover we can contain the image in the browser when it is moved
+		NB  : height must be 100%
+	*/
+/*	height: 100%;
+	background: url('../images/full-bg.jpg') no-repeat center;
+	background-size: cover;*/
+
+	/*contain keeps the original aspect ratio of the image*/
+	/*background-size: contain;*/
+}
+
+.box {
+	width: 700px;
+	height: 500px;
+	padding: 30px;
+  	background: url('../images/full-bg.jpg') no-repeat center;
+	background-size: cover; 
+	
+	background-clip: padding-box;  	/*for removing the bg from the border area  how far the bg visibly extend 
+	have values boder-box (default) padding-box content-box*/
+
+/*origin means where it begin same values as the above 
+
+NB : if background-attachment is fixed then it has no effect*/
+/*no need of clipping if we use background-origin*/
+	background-origin: content-box;
+	border: 15px solid rgba(35,66,97,.6);
+}

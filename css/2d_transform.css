@@ -1,0 +1,83 @@
+body {
+	padding-top: 70px;
+	background: rgba(240,252,255,.8);
+}
+.wrap {
+	margin: 0 auto;
+	padding: 110px 0;
+	width: 85%;
+	background: #F0FCFF;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+.box {
+	margin: auto;
+	width: 150px;
+	background: url('../images/mike-transparent.png') no-repeat 0 0;
+	background-size: 150px;
+}
+.mike {
+	display: block;
+	width: 100%;
+	
+	transition:1s ease-in-out;
+	
+}
+
+.wrap:hover .mike {
+	/*it have values rotate(rad,grad,deg)
+	400grad=360deg
+	1rad=57deg
+	3.14rad=180deg
+	or use turn unit(1turn ,2turn etc)
+
+	2. scales(1 argument) or invidual as scalex or scaley
+	3.skew() slanted appearnce  invidual as skewx or skewy can have -ve values
+	4.translate :for moving the property(accepts px and % units) can have -ve values, individuals as translatex and translatey */
+	/*transform:scalex(1.5);*/
+	/*transform:scale(1.5);*/
+	/*transform:skewy(-45deg);*/
+	/*transform:translate(300px,100px);   100% move the image by its own size*/
+	
+	/*using the two properties*/
+	transform:scale(1.5) rotate(360deg) translate(50%);
+
+	/*defining the origin default value is the 50%,50%(50% to the right and 50% from the top)  or use key values(top bottom) */
+	transform-origin:100% 0%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

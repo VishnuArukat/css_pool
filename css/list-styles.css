@@ -1,0 +1,35 @@
+
+body {
+	width: 80%;
+	margin: 2.5em auto;
+	font: 1.1em/1.3 sans-serif;
+}
+
+/* List Styles
+--------------------------------------------- */
+
+ul, ol {
+	margin-bottom: 2.5em;
+	list-style-position: inside; 	/*position of the marker outside default cases*/
+}
+
+ul {
+	/*for changing the type the list is displayed check web for other values*/
+
+	/*for adding the image to list item use list-type as none and use background to apply the image*/
+	list-style-type:none; 
+	/*list-style-image: url('../images/marker.png');*/
+}
+ul li{
+
+	background: url('../images/marker.png') no-repeat 0 2px;  	/*position*/
+	padding-left: 35px;
+}
+ol {
+	/*list-style-type: decimal-leading-zero; 	/*adds a zero infront of it*/
+	list-style: decimal-leading-zero outside; /*all in one*/
+}
+li{
+	border:1px solid #000;
+	margin-bottom: 1.2em;
+}

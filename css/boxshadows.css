@@ -1,0 +1,24 @@
+
+body {
+	background: #3a3a3a;
+}
+
+.box {
+	margin: 3em auto;
+	width: 700px;
+	height: 500px;
+	border-radius: 8px;
+	background: url('../images/bg-tiled.png');
+
+	/*has values horiz and verti offset can have - (moves it to the left or top) and +(right or down)  values
+		third value is the blur value as 0 is sharp and higher the value lighter the shadow
+		fourth value is spread radius value (for spraeding the shadow) +(for expanding  in all direction) - (shrink) from center of the shadow
+		fifth value is the color of the shadow 
+	*/
+
+	box-shadow: 20px 20px 30px -10px rgba(0,0,0,.8);
+
+	/*for inner shadows use inset*/
+	box-shadow: inset 0px 10px 10px 5px rgba(0,0,0,.8);	
+	/* can apply multiple box shadows by seperating each one with , and first will appear at top and last will be at bottom*/
+}

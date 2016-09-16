@@ -1,0 +1,45 @@
+
+
+.nav , .main{
+	display: flex;
+}
+
+
+
+
+.nav {
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.nav li{
+	/*flex grow property will determine how much it can grow 
+	in the below example 1 represents the ratio of spacing between the items*/
+	flex-grow:1;
+}
+
+
+.col{
+	/*same as flex-grow*/
+	flex:1;
+}
+.col-c{
+	/*col c grows compared to other col*/
+	flex:2;
+
+	/*for the order */
+	order:-1;
+}
+
+.col-b{
+	/*alternate for the padding and other position properies has values center and inherit and baseline and flex end check dev tools in the chrome for details
+	default value is the stretch*/
+	/*align-self:center;*/
+}
+
+@media screen and (max-width: 999px) {
+	.main{
+		flex-direction:column;
+	}
+}

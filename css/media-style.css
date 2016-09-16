@@ -1,0 +1,46 @@
+/*another method performance is reduced*/
+
+/*@import url("media-wider.css") screen and (max-width: 768px) and (min-width: 481px);*/
+/*@import url ("media-narrow.css") screen and (max-width: 480px);*/
+
+body {
+	font: 1.1em/1.5 sans-serif;
+}
+.wrap {
+	width: 85%;
+	margin: auto;
+}
+h1 {
+	font-size: 3em;
+}
+p {
+	margin-bottom: 1.5em;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/*list of all the media styles are in w3c site ex print ,'all' is the default value 
+and keyword is the logical operator 
+in para is the media featutres like width height etc check w3c
+no semicolun  after logical expression 
+tHis is better */
+
+
+@media screen and (max-width: 768px) and (min-width: 481px){
+	body{
+		background:#FF6347;
+		color: white;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	body{
+		background:#4682B4;
+	}
+}
+@media screen and (min-width: 1000px){
+	.wrap{
+		width: 700px;
+	}
+}

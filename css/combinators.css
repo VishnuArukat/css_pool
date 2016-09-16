@@ -1,0 +1,28 @@
+body {
+	padding-top: 35px;
+	font: 1.1em/1.5 sans-serif;
+}
+.main {
+	margin: auto;
+	padding: 10px 20px 20px;
+	width: 760px;
+	border: 1px solid;
+}
+
+/* Using Combinators */
+
+.main > a {
+	color: red;
+}
+/*Sibling selector p comes after the h2*/
+h2 + p{
+	color: white;
+	padding: 10px;
+	background-color: royalblue;
+}
+
+/* '~' is the General sibling selector which target the all siblings comes after the elemnet */
+
+h2 ~ p{
+	font-size: 1em;   /*modify every p comes after the h2 element*/
+}

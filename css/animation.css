@@ -1,0 +1,94 @@
+
+/*	Animations - WebKit only
+------------------------------------------ */
+.boat{
+	/*binding the selector rocking boat short hand property*/
+	-webkit-animation:rocking-boat 3s ease-in-out infinite;
+	/*chnaging the animation iteration count default is 1 cycle it accepts integers and keyword infinite*/
+	/*-webkit-animation-iteration-count:infinite;*/
+}
+.boat::after{
+	/*third value is the delay*/
+	animation:steam 4s 2s infinite;
+}
+body{
+	-webkit-animation:bg-move 8s ease-out forwards;
+
+
+	/*for animation direction 
+	1. reverse will play it in the reverse direction and "it also reverse the timing function"
+	2.alternative  :alternate the direction with the count odd iterations are played in normal direction and even iteration in the reverse direction
+	3.alternate-reverse:reverse the alternate property*/
+	/*-webkit-animation-direction:reverse;*/
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+								IMPORTANT
+
+	By default css animation will not affect an element untill the first keyframe is played and also stops affecting it untill the last keframe is stopped
+	this creates some bumps can be solved below
+	by using this we can determine the styles of the animation before and after the animation
+	has values 
+	1.backwards:first keyframe immediately applied before the animation runs only affects the animation with delay greater than zero;
+	2.forwards :continues to apply the last keyframe not reset;
+	3.both:uses both above properties can be used with delay;
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+/*-webkit-animation-fill-mode:forwards;*/
+
+/*for pausing certain the animation default is running it can be added to the short hand property also*/
+/*-webkit-animation-play-state:paused;*/
+
+
+}
+
+.mike{
+
+	/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+				IMPORTANT
+		always check the duration and delay times to adjust each animation so that it will come when we desired
+	$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+	-webkit-animation:mike-move 6s 6s ease-out forwards,mike-float 3.2s infinite;
+}
+
+/*	Keyframes - WebKit only
+------------------------------------------ */
+
+
+
+
+@-webkit-Keyframes rocking-boat{
+	/*actualy we do not have to create the 0% and 100% bcoz both are same as the boats original values with no rotation
+	if these are not defined browser will automatically calculate the values for 0% and 100% and it will be equal to the original position of the image*/
+	/*0%{ transform:rotate(0deg) translatey(0);}*/
+	50%{transform:rotate(-5deg) translatey(-10px);	}
+	/*100%{transform:rotate(0deg) translatey(0);}*/
+}
+@-webkit-Keyframes steam{
+	/*0%{opacity: 0;}*/
+	40%,60%{opacity: 1;}
+	100%{-webkit-transform:translate(-15%,-35%) rotatez(20deg);}
+}
+@-webkit-Keyframes bg-move{
+	0%{background-position:    100% -460px;}
+	100%{background-position: -350% -460px;}
+}
+
+@-webkit-Keyframes mike-move {
+	100%{ left: 12%;	}
+}
+@-webkit-Keyframes mike-float{
+	50%{-webkit-transform:rotatez(5deg) translatey(-5px);}
+}
+
+
+
+
+
+
+
+
+
+

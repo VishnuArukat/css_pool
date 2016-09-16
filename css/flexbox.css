@@ -1,0 +1,37 @@
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+ 					FLEX BOXES
+
+ 	For layouts in css
+ 	flex items and flex containers and flex lines which seperate items from each other
+ 	there are two axis main axis (default left to right) and cross axis(default top to bottom)
+ 	in older versions of browsers we need vendor prefixes and may not be supported ,newer versions supports the flex.
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+
+.nav {
+	display: flex;
+	/*controlling the flex item directions have values row(default)  row reverse (changing the direction of the main axis) and column (swap  the main and cross axis) and column reverse (reverse the axis)*/
+	/*flex-direction:row-reverse;*/
+	flex-direction:row;
+
+	/*justify the contents has values center flex end (places itmes  towards the end of the flex),flex start space-between and space-around (determines the space in the flex items)*/
+	justify-content:space-between;
+}
+
+
+/*
+		>>>>>>>>>>>>>>IMPORTANT<<<<<<<<<<<<<<<
+margin auto will pushes the flex item to the side example is given below*/
+
+/*
+.nav li:last-child{
+	margin-left: auto; 	it will push the item to the far right ,selecting the first child will push the first child to the left side
+}*/
+
+
+/*if we reduce the browser size flex containers will not wrap around it will overflow for that */
+
+.nav{
+	flex-wrap:wrap;
+}

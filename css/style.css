@@ -1,0 +1,75 @@
+/*Author Styles*/
+@import url('more_styles.css');  /*It has to be at top */
+
+h2{
+	/*These are type selectors*/
+	color: steelblue;
+	padding-bottom: 10px;
+	border-bottom: 2px dotted;
+}
+ul{
+	color: white;
+	background-color: steelblue;
+}
+*{
+	/*Universal Selector*/
+	/*Inherant property will not work*/
+	padding:0;	
+	margin: 0;
+	/*color:red;*/
+}
+h1 span{
+	/*deswndant selector of h1*/
+	color: darkblue;
+}
+h2 span{
+	color:black;
+	font-weight: normal;
+}
+footer{
+	padding-top: 50px;
+}
+
+/*SELECTING THE CLASS*/
+.container{
+	width: 740px;
+	margin: auto;   	/*center the div elements*/
+}
+
+
+/*class is selected like header.main or simply .main*/
+.main{
+	height: 110px;
+	color: white;
+	background-color: royalblue;
+	font-weight: bolder;
+}
+.main_footer{
+	height: 100px;
+	background-color: white;
+	color: grey;
+	text-align: center;
+}
+/*class having two names*/
+.base{
+	padding: 20px;
+	background-color: white;
+}
+/*Desendant selectors*/
+.base p{
+	font-size: 1em;
+}
+ul li{
+	list-style: none;
+}
+
+/*ID selectors*/
+#list{
+	background-color: white;
+	color:black;
+}
+a{
+	text-decoration: none;
+	color: green;
+	padding: 5px 5px 5px 5px;
+}

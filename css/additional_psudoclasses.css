@@ -1,0 +1,42 @@
+body {
+	font: normal 1.1em/1.5 sans-serif;
+	padding: 0 22%;
+}
+ul {
+	line-height: 2.1em;
+	list-style-type: none;
+	padding-left: 20px;
+}
+h2 {
+	margin-top: 0;
+}
+div {
+	margin-bottom: 12px;
+	padding: 20px;
+}
+
+/*  Pseudo-classes */
+
+:root{
+	/*select the root of the file in this case it is the html body so it turns bg color*/
+	background-color: #e0eef5;
+}
+:target{
+	/*if the href identifier and id of any tag matches it will change the color when clicked*/
+	color: white;
+	background-color: tomato;
+}
+:empty{
+	/*for selecting the empty elements */
+	/*these are used to return the result of any expression*/
+	background-color: tomato;
+}
+div:not(:empty){
+	/*select all div that is not empty*/
+	/*arguments can be anything class names or attribute names*/
+	/*   div:not([id='#s1']){
+	
+	}
+	*/
+	background-color: gray;
+}
